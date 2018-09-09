@@ -1,4 +1,4 @@
-var gifSubjects = ["the wonder years", "man overboard", "the story so far"];
+var gifSubjects = ["leganja estranja", "alaska thunderfuck", "rupaul", "alyssa edwards", "jiggly caliente"];
 
 //   Dynamically create buttons for subjects
 

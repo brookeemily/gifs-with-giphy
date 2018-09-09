@@ -1,0 +1,21 @@
+html, body {
+    background-color: lightpink;
+}
+
+#form {
+    margin: auto;
+    padding-top: 0;
+}
+
+#buttons {
+    margin: auto;
+}
+
+#title {
+    text-align: center;
+    margin-top: 2.5%;
+}
+
+.jumbotron {
+    margin-top: 5%;
+}
