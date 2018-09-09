@@ -58,7 +58,7 @@ createButtons();
   var queryURL =
     "https://api.giphy.com/v1/gifs/search?q=" +
     chosenSubject +
-    "&api_key=YDNLW68rHf5BtaBseXKFI8RgMhB9kl2f&limit=10";
+    "&api_key=YDNLW68rHf5BtaBseXKFI8RgMhB9kl2f&limit=5";
   console.log(queryURL);
 
   $.ajax({
