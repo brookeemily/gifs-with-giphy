@@ -1,4 +1,4 @@
-var gifSubjects = ["Leganja Estranja", "Alaska Thunderfuck", "Shangela", "Alyssa Edwards", "Jiggly Caliente", "Katya Zamolodchikova"];
+var gifSubjects = ["Leganja Estranja", "Alaska Thunderfuck", "Shangela", "Alyssa Edwards", "Jiggly Caliente", "Violet Chachki", "Thorgy Thor", "Bob the Drag Queen	", "Sharon Needles"];
 
 //   Dynamically create buttons for subjects
 
