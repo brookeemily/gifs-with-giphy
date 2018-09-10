@@ -1,4 +1,4 @@
-var gifSubjects = ["leganja estranja", "alaska thunderfuck", "rupaul", "alyssa edwards", "jiggly caliente"];
+var gifSubjects = ["Leganja Estranja", "Alaska Thunderfuck", "Shangela", "Alyssa Edwards", "Jiggly Caliente", "Katya Zamolodchikova"];
 
 //   Dynamically create buttons for subjects
 
@@ -58,7 +58,7 @@ createButtons();
   var queryURL =
     "https://api.giphy.com/v1/gifs/search?q=" +
     chosenSubject +
-    "&api_key=YDNLW68rHf5BtaBseXKFI8RgMhB9kl2f&limit=5";
+    "&api_key=YDNLW68rHf5BtaBseXKFI8RgMhB9kl2f&limit=10";
   console.log(queryURL);
 
   $.ajax({
@@ -76,32 +76,32 @@ createButtons();
       // Storing the result item's rating
       var rating = results[i].rating;
 
-      // Creating a paragraph tag with the result item's rating
-      var p = $("<p>").text("Rating: " + rating);
-
-      // Creating an image tag
-      var personImage = $("<img>");
-      personImage.addClass("theGif");
-
-
+      
+      // Creating an image tag that will be the gif that is displayed on the page
+      var gifToDisplay = $("<img>");
+      gifToDisplay.addClass("theGif");
+      
+      
       // Giving the image tag an src attribute of a proprty pulled off the
       // result item
-      personImage.attr("src", results[i].images.fixed_height_still.url);
-      personImage.attr("data-still", results[i].images.fixed_height_still.url);
-      personImage.attr("data-animate", results[i].images.fixed_height.url);
-      personImage.attr("data-state", "still");
-
-
+      gifToDisplay.attr("src", results[i].images.fixed_height_still.url);
+      gifToDisplay.attr("data-still", results[i].images.fixed_height_still.url);
+      gifToDisplay.attr("data-animate", results[i].images.fixed_height.url);
+      gifToDisplay.attr("data-state", "still");
+      
+      
+      // Creating a paragraph tag with the result item's rating
+      var p = $("<p>").text("giphy rating: " + rating);
 
  
       
-      // personImage.attr("src", results[i].images.fixed_height.url);
+      // gifToDisplay.attr("src", results[i].images.fixed_height.url);
 
 
-      // Appending the paragraph and personImage we created to the "gifDiv" div we created
+      // Appending the paragraph and gifToDisplay we created to the "gifDiv" div we created
+      gifDiv.append(gifToDisplay);
+      
       gifDiv.append(p);
-      gifDiv.append(personImage);
-
       // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
       $("#gifDisplay").prepend(gifDiv);
       
