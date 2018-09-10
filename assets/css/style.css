@@ -2,6 +2,8 @@
 html, body {
     background-image:url("../images/glitter-4.jpg");
     background-size: 600px 600px;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 #form {
@@ -17,7 +19,7 @@ html, body {
     grid-gap: 15px;
      }
     
-button {
+.subjectButtons {
     background-color: #AC5A63;
     border-color: #D498A2;
     border-width: 3px;
@@ -62,10 +64,11 @@ grid-gap: 50px;
     height: 275px;
     background-color: rgba(10, 0, 0, 0.3);
     padding: 15px;
+    padding-bottom: 0px;
 }
 
 p {
-    background-color: rgba(10, 0, 0, 0.3);
+    background-color: rgba(10, 0, 0, 0.5);
     padding: 15px;
     color: #FDF6F7; 
 }
