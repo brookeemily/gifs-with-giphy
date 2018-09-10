@@ -17,6 +17,7 @@ html, body {
         display: grid;
     grid-template-columns: 150px 150px 150px;
     grid-gap: 15px;
+
      }
     
 .subjectButtons {
@@ -45,7 +46,7 @@ html, body {
 
 .jumbotron {
     margin-top: 5%;
-    background-color: rgba(10, 0, 0, 0.3);
+    background-color: rgba(10, 0, 0, 0.6);
 
     /* background-image:url("../images/glitter-3.jpg");
     background-size: contain; */
@@ -54,29 +55,33 @@ html, body {
 
 #gifDisplay {
     display: grid;
-grid-template-columns: 350px 350px 350px;
+grid-template-columns: 500px 500px;
 grid-gap: 50px;
+margin:auto;
 
 }
 
 .theGif {
-    width: 350px;
-    height: 275px;
-    background-color: rgba(10, 0, 0, 0.3);
+    width: 500px;
+    height: 375px;
+    background-color: rgba(10, 0, 0, 0.6);
     padding: 15px;
     padding-bottom: 0px;
 }
 
 p {
-    background-color: rgba(10, 0, 0, 0.5);
+    background-color: rgba(10, 0, 0, 0.6);
     padding: 15px;
     color: #FDF6F7; 
 }
 
-.form-control {
+.form-control{
     background-color: #D498A2;
     border-color: #FDF6F7;
     border-width: 3px;
     color: #FDF6F7;
 }
 
+label {
+    color: #FDF6F7;
+}
