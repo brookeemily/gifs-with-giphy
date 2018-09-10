@@ -32,9 +32,7 @@ $("#submit").on("click", function(event) {
   event.preventDefault();
 
   // Grab the text from the input box
-  var subject = $("#userInput")
-    .val()
-    .trim();
+  var subject = $("#userInput").val().trim();
 
   // The text from the input box is then added to the gifSubjects array
   gifSubjects.push(subject);
