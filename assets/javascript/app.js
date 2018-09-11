@@ -46,12 +46,13 @@ $("#submit").on("click", function(event) {
 });
 
 
-// Create function for when the buttons are clicked
-
+  // Create function for when the buttons are clicked
   // When one of the subject buttons is clicked...
   $(document).on('click', '.subjectButtons', function(){ 
 
   // Empty out the current gif display
+
+
   $("#gifDisplay").empty();
 
   // Set the variable for chosenSubject to the subject of the button that was clicked
@@ -103,15 +104,23 @@ $("#submit").on("click", function(event) {
       gifDiv.append(p);
 
       // Prepending the gifDiv to the gifDisplay div in the HTML
-      $("#gifDisplay").prepend(gifDiv);
-      
+      $(gifDisplay).prepend(gifDiv);
+    
+
+
     }
 
     // Pause / Play gif on click
 
+    // $(document).unbind('click', '.theGif', function(){ 
+    // });
+    
     // When a gif is clicked...
-    $(document).on('click', '.theGif', function(){ 
-  
+
+    $('.theGif').off().on('click', function() {
+
+    console.log("clicked");
+
       // Set the state variable to the current state of the gif
       var state = $(this).attr("data-state");
       
@@ -126,6 +135,8 @@ $("#submit").on("click", function(event) {
         $(this).attr("src", $(this).attr("data-still"));
         $(this).attr("data-state", "still");
       }
+
+      return false;
     });
 
 
